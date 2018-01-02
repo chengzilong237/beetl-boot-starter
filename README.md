@@ -41,7 +41,7 @@ Add the following dependency to your pom.xml:
     <dependency>
        <groupId>com.cuisongliu</groupId>
        <artifactId>beetl-spring-boot-starter</artifactId>
-       <version>1.3</version>
+       <version>1.4</version>
      </dependency>
 
 ### gradle
@@ -87,7 +87,7 @@ at  application.properties or application.yml append some properties.
 |spring.beetl.statement-start|<%|
 |spring.beetl.statement-end|%>|
 |spring.beetl.auto-check|false|
-
+|spring.beetl.properties|null|
 
 ## Example
 
@@ -95,6 +95,8 @@ at  application.properties or application.yml append some properties.
       beetl:
         suffix: .html
         auto-check: true
+        properties:
+            FNP.tool: com.cuisongliu.core.util.ToolUtil
 
 ## Acknowledgments
 
